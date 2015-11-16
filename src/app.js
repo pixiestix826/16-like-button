@@ -8,4 +8,4 @@ $(`button`).click(function() {
   } else {
     return $(`button`).html(num + ` Likes`);
   }
-})();
+});
