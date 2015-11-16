@@ -4,8 +4,8 @@ $(`button`).click(function() {
   num++;
   $(`button`).html(num + ` Like`);
   if (num <= 1) {
-    return $(`button`).html(num + ` Like`);
+    return true;
   } else {
     return $(`button`).html(num + ` Likes`);
   }
-});
+})();
