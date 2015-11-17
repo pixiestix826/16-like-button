@@ -1,11 +1,13 @@
-var num = 0;
+export default function() {
+  var num = 0;
 
-$(`button`).click(function() {
-  num++;
-  $(`button`).html(num + ` Like`);
-  if (num <= 1) {
-    return true;
-  } else {
-    return $(`button`).html(num + ` Likes`);
-  }
-});
+  $(`button`).on(`click`, function() {
+    num++;
+    $(this).html(num + ` Like`);
+    if (num <= 1) {
+      return true;
+    } else {
+      return $(this).html(num + ` Likes`);
+    }
+  });
+}
