@@ -5,3 +5,11 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+button {
+  height: 4rem;
+  width: 8rem;
+  font-size: 1rem;
+  background: purple;
+  color: white;
+}
